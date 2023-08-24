@@ -1,1 +1,14 @@
-<p>card-pricing works!</p>
+<div class="pricing-container">
+    <div class="pricing-title">
+        <h3>{{ purchased ? 'Play It Now' : 'Buy It' }}</h3>
+    </div>
+    <div class="pricing-value">
+        <div class="pricing-value-platform">
+            <span>|</span>
+            <p>{{ gameType }}</p>
+        </div>
+        <div class="pricing-value-price">
+            <p class="game-price">{{ purchased ? '' : gamePrice }}</p>
+        </div>
+    </div>
+</div>

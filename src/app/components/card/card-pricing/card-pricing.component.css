@@ -1,0 +1,34 @@
+.pricing-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 85px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+
+    background-color: #0d0d0da9;
+    color: white;
+    font-family: inherit;
+}
+
+.pricing-title {
+    margin: 3px 0 10px 0;
+}
+
+.pricing-value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-value-platform {
+    display: flex;
+}
+
+.pricing-value-platform > span {
+    font-weight: bolder;
+    color: aqua;
+    margin-right: 5px;
+}

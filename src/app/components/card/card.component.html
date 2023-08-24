@@ -1,8 +1,13 @@
 <a href="#" class="card-container">
     <img
     class="card-cover"
-    src="../../../assets/img/bt-1.jpg"
+    [src]="gameCover"
     alt="Game cover"
     >
-    <app-card-label [gameLabel]="'Exclusive'"/>
+    <app-card-label gameLabel="{{ gameLabel }}"/>
+    <app-card-pricing
+    gameType="{{ gameType }}"
+    gamePrice="{{ gamePrice }}"
+    [purchased]=purchased
+    />
 </a>
