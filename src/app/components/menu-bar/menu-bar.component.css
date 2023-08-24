@@ -36,25 +36,17 @@
     width: 172px;
 }
 
-.menu-btn {
-    display: none;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    padding: 2px 4px;
-}
-
-.menu-btn > span > img {
-    width: 26px;
-    height: 26px;
-}
-
 @media screen and (max-width: 868px) {
-    .menu-item {
-        display: none;
-    }
-    .menu-btn {
+    .menu-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #fff;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-item > ul {
+        display: none;
     }
 }

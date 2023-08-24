@@ -1,37 +1,9 @@
 <div class="home-container">
-    <app-card
-    gameCover="../../../assets/img/bt-1.jpg"
-    gameLabel="Exclusive"
-    gameType="PS4 Digital"
-    gamePrice="R$ 159,99"
-    [purchased]=true
-    />
-    <app-card
-    gameCover="../../../assets/img/bt-4.jpg"
-    gameLabel="Digital"
-    gameType="PS3 | PS4"
-    gamePrice="R$ 189,99"
-    [purchased]=false
-    />
-    <app-card
-    gameCover="../../../assets/img/bt-5.jpg"
-    gameLabel="Digital"
-    gameType="PS3 | PS4"
-    gamePrice="R$ 199,99"
-    [purchased]=false
-    />
-    <app-card
-    gameCover="../../../assets/img/bt-bad-company-2.jpg"
-    gameLabel="Exclusive"
-    gameType="PS3 | PS4"
-    gamePrice="R$ 189,99"
-    [purchased]=false
-    />
-    <app-card
-    gameCover="../../../assets/img/bt-hardline.jpg"
-    gameLabel="Exclusive"
-    gameType="PS3"
-    gamePrice="R$ 169,99"
-    [purchased]=false
+    <app-card *ngFor="let game of gameList"
+    gameCover="{{ game.cover }}"
+    gameLabel="{{ game.label }}"
+    gameType="{{ game.type }}"
+    gamePrice="{{ game.price }}"
+    [purchased]=game.purchased
     />
 </div>
